@@ -1,2 +1,3 @@
 # tailword
-A wordpress theme made using tailwind
+
+A WordPress theme made using tailwind
