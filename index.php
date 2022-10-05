@@ -32,6 +32,7 @@
 	}
 ?>
 
+<?php get_header(); ?>
 
 <div class="container mx-auto my-8">
 

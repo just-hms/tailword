@@ -114,13 +114,15 @@ function parent_menu_dropdown( $item_output, $item, $depth, $args ) {
 	if($args->theme_location !== "primary"){
 		return $item_output;
 	}
+	// TODO find a way to extract the a tag
 
 	if (in_array( 'menu-item-has-children', $item->classes ) ) {
 		return 
+			'<div class="cursor-pointer w-full lg:shadow lg:border lg:border-zinc-200 pr-2 lg:m-2 rounded-xl">' . 
 			substr($item_output,0,-4) . 	
-			'<svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+			'<svg class="ml-1 lg:-mr-4 mr-3 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 				<path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-			</svg></a>';
+			</svg></a></div>';
     }
 	
     return $item_output;
