@@ -42,8 +42,8 @@ add_action( 'after_setup_theme', 'tailword_setup' );
 function tailword_enqueue_scripts() {
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'tailword', tailword_asset( 'dist/css/app.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'tailword', tailword_asset( 'dist/js/app.js' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'tailword', tailword_asset( 'assets/css/app.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'tailword', tailword_asset( 'assets/js/app.js' ), array(), $theme->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'tailword_enqueue_scripts' );
@@ -159,125 +159,38 @@ add_filter( 'nav_menu_link_attributes', 'tailword_nav_menu_add_anchor_class', 10
 
 function tailword_customize_register( $wp_customize ) {
 
-	$wp_customize->add_section( 'first_contacts' , array(
-		'title'      => __( 'Contatti', 'tailword' ),
+	$wp_customize->add_section( 'wp' , array(
+		'title'      => __( 'Work in progress', 'tailword' ),
 		'priority'   => 30,
 	));
 
-	// ------
-
 	$wp_customize->add_setting(
-		'telephone', array(
+		'is_wp', array(
 			'type' => 'theme_mod',
 			'transport' => 'postMessage'
 		)
 	);
 
-	$wp_customize->add_control( 'telephone', array(
-		'label' => __( 'Telefono' ),
-		'type' => 'text',
-		'section' => 'first_contacts',
-	));
+	$wp_customize->add_control( 'is_wp', array(
+		'label' => __( 'Attiva la modalità in lavorazione' ),
+		'type' => 'checkbox',
+		'section' => 'wp',
+	));	
 
-	// ------
+	// ---------------
 
 	$wp_customize->add_setting(
-		'email', array(
+		'wp_text', array(
 			'type' => 'theme_mod',
 			'transport' => 'postMessage'
 		)
 	);
 
-	$wp_customize->add_control( 'email', array(
-		'label' => __( 'Email' ),
+	$wp_customize->add_control( 'wp_text', array(
+		'label' => __( 'Scritta sostitutiva' ),
 		'type' => 'text',
-		'section' => 'first_contacts',
-	));
-
-	// ------
-
-	$wp_customize->add_setting(
-		'location', array(
-			'type' => 'theme_mod',
-			'transport' => 'postMessage'
-		)
-	);
-
-	$wp_customize->add_control( 'location', array(
-		'label' => __( 'Posizione' ),
-		'type' => 'text',
-		'section' => 'first_contacts',
-	));
-
-	// ------
-
-	$wp_customize->add_setting(
-		'location_link', array(
-			'type' => 'theme_mod',
-			'transport' => 'postMessage'
-		)
-	);
-
-	$wp_customize->add_control( 'location_link', array(
-		'label' => __( 'Link di Google Maps' ),
-		'type' => 'text',
-		'section' => 'first_contacts',
-	));
-
-	// ------
-
-	$wp_customize->add_section( 'footer' , array(
-		'title'      => __( 'Footer', 'tailword' ),
-		'priority'   => 30,
-	));
-
-	// ------
-	
-	$wp_customize->add_setting(
-		'facebook', array(
-			'type' => 'theme_mod',
-			'transport' => 'postMessage'
-		)
-	);
-
-	$wp_customize->add_control( 'facebook', array(
-		'label' => __( 'Inserisci il link di facebook' ),
-		'type' => 'text',
-		'section' => 'footer',
-	));
-
-	// ------
-	
-	$wp_customize->add_setting(
-		'instagram', array(
-			'type' => 'theme_mod',
-			'transport' => 'postMessage'
-		)
-	);
-
-	$wp_customize->add_control( 'instagram', array(
-		'label' => __( 'Inserisci il link di instagram' ),
-		'type' => 'text',
-		'section' => 'footer',
-	));
-
-	// ------
-	
-	$wp_customize->add_setting(
-		'twitter', array(
-			'type' => 'theme_mod',
-			'transport' => 'postMessage'
-		)
-	);
-
-	$wp_customize->add_control( 'twitter', array(
-		'label' => __( 'Inserisci il link di twitter' ),
-		'type' => 'text',
-		'section' => 'footer',
-	));
-
-	
-	
+		'section' => 'wp',
+	));	
 }
 
 add_action( 'customize_register', 'tailword_customize_register' );
