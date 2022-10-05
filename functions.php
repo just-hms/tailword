@@ -42,8 +42,8 @@ add_action( 'after_setup_theme', 'tailword_setup' );
 function tailword_enqueue_scripts() {
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'tailword', tailword_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'tailword', tailword_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'tailword', tailword_asset( 'dist/css/app.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'tailword', tailword_asset( 'dist/js/app.js' ), array(), $theme->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'tailword_enqueue_scripts' );
