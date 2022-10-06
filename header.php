@@ -20,12 +20,12 @@
 
 	<?php do_action( 'tailword_header' ); ?>
 
-	<header>
+	<header class="h-[10em]">
 
-		<div class="mx-2 lg:mx-10">
-			<div class="lg:flex lg:justify-between lg:items-center py-6">
+		<div class="mx-4 lg:ml-10 lg:mr-20">
+			<div class="lg:flex lg:justify-between lg:items-start pb-6">
 				<div class="flex justify-between items-center">
-					<div class="max-w-xs md:max-w-md">
+					<div class="max-w-xs">
 						<?php if ( has_custom_logo() ) { ?>
                             <?php the_custom_logo(); ?>
 						<?php } else { ?>
@@ -62,7 +62,7 @@
 					$default_anchor_class = '
 						w-full rounded
 						lg:px-2 p-2
-						hover:bg-zinc-300
+						hover:bg-zinc-300 py-3
 					';
 
 					$default_anchor_class_0 = '
@@ -70,12 +70,12 @@
 						hover:bg-zinc-300
 
 						w-full rounded
-						lg:px-2 p-2
+						lg:px-2 p-3
 						
 						lg:w-auto 
 						lg:hover:underline
 
-						mx-4 lg:mx-5
+						lg:mx-5
 						lg:hover:bg-transparent
 					';
 
@@ -89,7 +89,6 @@
 							
 							'menu_class'      => '
 								select-none
-								text-lg
 								text-zinc-500
 
 								font-medium	
@@ -97,12 +96,11 @@
 								uppercase
 								
 								flex flex-col lg:flex-row justify-center items-center 
-								w-[90%] py-2 mx-auto rounded 
-								border lg:border-0
-
-								bg-zinc-50  
-								
+								w-[90%] py-4 mx-auto rounded-xl
+								border lg:border-0 border-zinc-300
+								bg-zinc-50 px-4
 								lg:bg-transparent
+								my-2
 							',
 							
 							'li_class_0'       => '
@@ -111,29 +109,33 @@
 								
 							'li_class'         => '
 								w-full flex relative
+								flex-col
 								rounded',
 								
 							'anchor_class_0'   => $default_anchor_class_0,
 							'anchor_class'     => $default_anchor_class,
-							'submenu_class'    => '
+							'submenu_class'    => '	
+								flex flex-col
+								inset-x-0 mx-auto
 								hidden
-								top-[2.5em] text-center absolute z-40 w-44
-								rounded shadow dark:shadow-zinc-900
-								bg-white dark:bg-zinc-600
+
+								top-[3.5rem] lg:my-0 my-1 text-center lg:absolute z-40 w-full
+								
+								border border-zinc-200 		
+								shadow rounded-xl bg-white
 							',
 							
 							'active_link'      =>"
 								$default_anchor_class
-								text-white font-bold
+								!text-black 
+								!font-black
 							",
 
 							'active_link_0'    => "
 								$default_anchor_class_0
 								!text-black 
 								!font-black 
-								bg-transparent
-							",
-							
+							",							
 
 						)
 					);
@@ -142,7 +144,7 @@
 		</div>
 	</header>
 
-	<div id="content" class="site-content flex-grow mx-3">
+	<div id="content" class="site-content grow mx-3">
 
 		<?php do_action( 'tailword_content_start' ); ?>
 

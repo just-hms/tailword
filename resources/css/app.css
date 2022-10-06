@@ -20,3 +20,6 @@
 }
 
 
+.entry-header {
+	@apply !hidden;
+}
