@@ -34,7 +34,7 @@
 
 <?php get_header(); ?>
 
-<div class="container mx-auto my-8">
+<div class="mx-auto my-8">
 
 	<?php if ( have_posts() ) : ?>
 		<?php

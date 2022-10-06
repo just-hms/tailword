@@ -12,23 +12,23 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'bg-white text-zinc-900 antialiased' ); ?>>
+<body <?php body_class( 'bg-white text-zinc-900 antialiased !overflow-x-hidden' ); ?>>
 
 <?php do_action( 'tailword_site_before' ); ?>
 
-<div id="page" class="min-h-screen flex flex-col ">
+<div id="page" class="min-h-screen flex flex-col">
 
 	<?php do_action( 'tailword_header' ); ?>
 
-	<header class="h-[10em]">
+	<header class="select-none z-50">
 
 		<div class="mx-4 lg:ml-10 lg:mr-20">
 			<div class="lg:flex lg:justify-between lg:items-start pb-6">
 				<div class="flex justify-between items-center">
 					<div class="max-w-xs">
-						<?php if ( has_custom_logo() ) { ?>
-                            <?php the_custom_logo(); ?>
-						<?php } else { ?>
+						<?php if ( has_custom_logo() ) {
+                            the_custom_logo();
+						} else { ?>
 							<div class="text-lg uppercase ">
 								<a href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
 									<?php echo get_bloginfo( 'name' ); ?>
@@ -41,7 +41,7 @@
 
 						<?php } ?>
 					</div>
-
+					
 					<div aria-label="Toggle navigation" class="lg:hidden block" id="primary-menu-toggle">
 						<button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-neutral-800 rounded-lg lg:hidden hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 ">
 							<span class="sr-only">Open main menu</span>
@@ -60,7 +60,7 @@
 				<?php	
 
 					$default_anchor_class = '
-						w-full rounded
+						w-full
 						lg:px-2 p-2
 						hover:bg-zinc-300 py-3
 					';
@@ -88,7 +88,6 @@
 							'container_class' => 'hidden lg:block',
 							
 							'menu_class'      => '
-								select-none
 								text-zinc-500
 
 								font-medium	

@@ -6,3 +6,25 @@ alignright
 wp-block-button
 wp-caption
 wp-caption-text
+
+
+TODO remove classes inside app.css
+
+h-screen
+lg:text-9xl
+text-5xl
+font-bold
+h-screen-header
+-mt-[2em]
+text-zinc-400
+title-xl
+title-container
+socials-slot
+sr-only
+
+z-20
+z-30
+
+light-section
+dark-section
+title-lg

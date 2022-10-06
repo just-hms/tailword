@@ -9,7 +9,6 @@ module.exports = {
 		'./resources/js/*.js',
 		'./safelist.txt'
     
-
   	],
 	theme: {
 		extend: {},

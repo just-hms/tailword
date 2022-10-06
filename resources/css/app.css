@@ -6,6 +6,7 @@
 @import "custom.css";
 
 
+
 .alignwide {
 	margin: 2rem auto;
 	max-width: 1280px !important;
@@ -16,10 +17,121 @@
 	/* retro-combability */
 	height: 100vh;
 
-	height: calc(100vh - 10em);
+	height: calc(100vh - 15em);
 }
 
 
 .entry-header {
 	@apply !hidden;
+}
+
+.sub-menu > li:first-child > a{
+	@apply !rounded-t-xl;
+}
+
+.sub-menu > li:last-child > a{
+	@apply !rounded-b-xl;
+}
+
+.title-spacer{
+    @apply min-h-[30em];
+    @apply h-screen;
+}
+
+.title-container{
+	@apply w-screen;
+	@apply !absolute;
+	@apply !inset-0;
+    @apply h-screen;
+    @apply min-h-[30em];
+	@apply flex;
+
+    @apply text-center;
+    @apply items-center;
+    @apply justify-center;
+    @apply relative;
+}
+
+@screen lg {
+	.title-xl{
+		@apply !text-9xl;
+	}
+	.title-xl-image{
+		@apply h-[50em];
+	}
+	.socials-slot{
+		@apply justify-end;
+		@apply !flex-col;
+	}
+	.title-container{
+		@apply min-h-[40em];
+	}
+}
+
+.title-xl{
+	@apply max-w-screen-2xl;	
+	@apply text-zinc-600;
+	@apply text-6xl;
+	@apply !font-black;
+	@apply mx-5;
+}
+
+.dark-title-lg{
+	@apply max-w-screen-xl;	
+	@apply text-zinc-200;
+	@apply text-6xl;
+	@apply !font-black;
+	@apply mx-5;
+}
+
+.title-xl-image{
+	@apply !absolute;
+	@apply opacity-30;
+	@apply mx-auto;
+	@apply max-w-[90%];
+}
+
+.socials-slot{
+	@apply !absolute;
+	@apply !flex;
+	@apply flex-row;
+	@apply justify-end;
+
+	@apply right-8;
+	@apply bottom-5;
+}
+
+.icon{
+	@apply m-6;
+	@apply cursor-pointer;
+	@apply block;
+	@apply text-zinc-400;
+	@apply hover:text-zinc-500;
+}
+
+.dark-section{
+	@apply h-screen;
+	@apply space-y-[2em];
+	@apply min-h-[30em];
+	@apply !text-zinc-100;
+	@apply bg-zinc-800;
+	@apply flex;
+	@apply -mx-4;
+	@apply flex-col;
+	@apply items-center;
+	@apply justify-center;
+	@apply text-center;
+}
+
+.light-section{
+	@apply h-screen;
+	@apply min-h-[30em];
+	@apply !text-zinc-100;
+	@apply bg-zinc-800;
+	
+	@apply flex;
+	@apply flex-col;
+	@apply items-center;
+	@apply justify-center;
+	@apply text-center;
 }

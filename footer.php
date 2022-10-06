@@ -8,7 +8,7 @@
 <?php do_action( 'tailword_content_after' ); ?>
 
 
-<footer class="p-4 bg-zinc-100 sm:p-6 ">
+<footer class="p-4 sm:p-6 select-none">
 
 	<?php do_action( 'tailword_footer' ); ?>
 
