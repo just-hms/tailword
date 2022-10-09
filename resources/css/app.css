@@ -6,7 +6,8 @@
 @import "custom.css";
 
 body{
-	@applt text-zinc-800;
+	@apply text-zinc-800;
+	/* @apply !bg-zinc-100; */
 }
 
 /* fix wp .alignwide */
@@ -48,6 +49,15 @@ body{
 	@apply max-w-[90%];
 }
 
+.header-title{
+	@apply max-w-screen-2xl;	
+	@apply text-zinc-600;
+	@apply text-6xl;
+	@apply !font-black;
+	@apply mx-5;
+}
+
+
 .socials-slot{
 	@apply !absolute;
 	@apply !flex;
@@ -59,7 +69,7 @@ body{
 }
 
 @screen lg {
-	.title-xl{
+	.header-title{
 		@apply !text-9xl;
 	}
 	.header-image{
@@ -75,6 +85,13 @@ body{
 	.section{
 		@apply mb-0;
 	}
+	.horizontal{
+		@apply !flex-row;
+	}
+	.half{
+		@apply w-[44%];
+		@apply mx-[2%];
+	}
 }
 
 .title-lg{
@@ -86,8 +103,7 @@ body{
 
 .title-xl{
 	@apply max-w-screen-2xl;	
-	@apply text-zinc-600;
-	@apply text-6xl;
+	@apply text-9xl;
 	@apply !font-black;
 	@apply mx-5;
 }
@@ -101,19 +117,17 @@ body{
 }
 
 .section{
-	@apply lg:min-h-screen;
+	@apply min-h-screen;
 	@apply flex;
 	@apply flex-wrap;
-	@apply mx-5;
+	@apply px-5;
+	@apply -mx-5;
+	@apply py-[4em];
 	@apply mb-[10em];
 	@apply justify-center;
 	@apply items-center;
 	@apply snap-center;
 }
-
-/* *{
-	@apply !bg-sky-800/10;
-} */
 
 .vertical{
 	@apply !flex-col;
@@ -130,3 +144,55 @@ body{
 	@apply m-5;
 	@apply lg:w-[40%];
 }
+
+.dark{
+	@apply !bg-zinc-900;
+	@apply !text-zinc-200;
+}
+
+.darkish{
+	@apply !bg-zinc-800;
+	@apply !text-zinc-100;
+}
+
+.image-xl{
+	@apply w-full;
+	@apply max-w-6xl;
+	@apply rounded-xl;
+}
+
+
+.image-lg{
+	@apply w-full;
+	@apply max-w-4xl;
+	@apply rounded-xl;	
+}
+
+.image-md{
+	@apply w-full;
+	@apply max-w-2xl;
+	@apply rounded-xl;
+}
+
+.image-sm{
+	@apply w-full;
+	@apply max-w-xl;
+	@apply rounded-xl;
+}
+
+.horizontal{
+	@apply flex-col;
+}
+
+.half{
+	@apply flex;
+	@apply flex-col;
+	@apply items-center;
+	@apply justify-center;
+	@apply text-center;
+	@apply rounded-xl;
+	@apply bg-zinc-100;
+	@apply p-[4em];
+}
+
+

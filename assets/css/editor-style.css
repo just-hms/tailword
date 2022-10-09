@@ -133,6 +133,16 @@
   margin-bottom: 1em
 }
 
+.mx-\[1\%\] {
+  margin-left: 1%;
+  margin-right: 1%
+}
+
+.mx-\[2\%\] {
+  margin-left: 2%;
+  margin-right: 2%
+}
+
 .-mt-\[2em\] {
   margin-top: -2em
 }
@@ -225,6 +235,18 @@
   height: 50em
 }
 
+.max-h-\[30em\] {
+  max-height: 30em
+}
+
+.max-h-\[40em\] {
+  max-height: 40em
+}
+
+.max-h-\[35em\] {
+  max-height: 35em
+}
+
 .min-h-screen {
   min-height: 100vh
 }
@@ -259,6 +281,14 @@
 
 .w-\[90\%\] {
   width: 90%
+}
+
+.w-\[45\%\] {
+  width: 45%
+}
+
+.w-\[44\%\] {
+  width: 44%
 }
 
 .max-w-4xl {
@@ -404,6 +434,22 @@
   padding: 0.75rem
 }
 
+.p-\[3em\] {
+  padding: 3em
+}
+
+.p-\[4em\] {
+  padding: 4em
+}
+
+.p-\[15em\] {
+  padding: 15em
+}
+
+.p-\[15sem\] {
+  padding: 15sem
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem
@@ -427,6 +473,16 @@
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem
+}
+
+.py-\[2em\] {
+  padding-top: 2em;
+  padding-bottom: 2em
+}
+
+.py-\[4em\] {
+  padding-top: 4em;
+  padding-bottom: 4em
 }
 
 .pb-6 {

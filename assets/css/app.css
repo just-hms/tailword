@@ -681,6 +681,11 @@ video {
   margin-right: 0.75rem;
 }
 
+.mx-\[2\%\] {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .my-\[1em\] {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -812,6 +817,10 @@ video {
 
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-\[44\%\] {
+  width: 44%;
 }
 
 .max-w-4xl {
@@ -957,6 +966,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-\[4em\] {
+  padding: 4em;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -980,6 +993,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-\[4em\] {
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .pb-6 {
@@ -1122,8 +1140,10 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-body{
-  @applt text-zinc-800;
+body {
+  --tw-text-opacity: 1;
+  color: rgb(39 39 42 / var(--tw-text-opacity));
+  /* @apply !bg-zinc-100; */
 }
 
 /* fix wp .alignwide */
@@ -1170,6 +1190,17 @@ body{
   max-width: 90%;
 }
 
+.header-title {
+  max-width: 1536px;
+  --tw-text-opacity: 1;
+  color: rgb(82 82 91 / var(--tw-text-opacity));
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 900 !important;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .socials-slot {
   position: absolute !important;
   display: flex !important;
@@ -1180,7 +1211,7 @@ body{
 }
 
 @media (min-width: 1024px) {
-  .title-xl {
+  .header-title {
     font-size: 8rem !important;
     line-height: 1 !important;
   }
@@ -1201,6 +1232,16 @@ body{
   .section {
     margin-bottom: 0px;
   }
+
+  .horizontal {
+    flex-direction: row !important;
+  }
+
+  .half {
+    width: 44%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 
 .title-lg {
@@ -1214,9 +1255,7 @@ body{
 
 .title-xl {
   max-width: 1536px;
-  --tw-text-opacity: 1;
-  color: rgb(82 82 91 / var(--tw-text-opacity));
-  font-size: 3.75rem;
+  font-size: 8rem;
   line-height: 1;
   font-weight: 900 !important;
   margin-left: 1.25rem;
@@ -1236,26 +1275,21 @@ body{
   color: rgb(113 113 122 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
-  .section {
-    min-height: 100vh;
-  }
-}
-
 .section {
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+  padding-top: 4em;
+  padding-bottom: 4em;
   margin-bottom: 10em;
   justify-content: center;
   align-items: center;
   scroll-snap-align: center;
 }
-
-/* *{
-	@apply !bg-sky-800/10;
-} */
 
 .vertical {
   flex-direction: column !important;
@@ -1288,6 +1322,60 @@ body{
   .box {
     width: 40%;
   }
+}
+
+.dark {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity)) !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(228 228 231 / var(--tw-text-opacity)) !important;
+}
+
+.darkish {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity)) !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(244 244 245 / var(--tw-text-opacity)) !important;
+}
+
+.image-xl {
+  width: 100%;
+  max-width: 72rem;
+  border-radius: 0.75rem;
+}
+
+.image-lg {
+  width: 100%;
+  max-width: 56rem;
+  border-radius: 0.75rem;
+}
+
+.image-md {
+  width: 100%;
+  max-width: 42rem;
+  border-radius: 0.75rem;
+}
+
+.image-sm {
+  width: 100%;
+  max-width: 36rem;
+  border-radius: 0.75rem;
+}
+
+.horizontal {
+  flex-direction: column;
+}
+
+.half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  padding: 4em;
 }
 
 .hover\:bg-neutral-100:hover {
@@ -1480,3 +1568,5 @@ body{
             text-decoration-line: underline;
   }
 }
+
+
