@@ -20,7 +20,7 @@
 			</head>
 			<body <?php body_class( 'bg-white text-zinc-900 antialiased' ); ?>>
 
-				<div class="h-screen-header flex items-center justify-center">
+				<div class="h-screen flex items-center justify-center">
 					<h1 class="text-6xl font-black text-zinc-800 relative">
 						<?php echo $wp_text == "" ? "Sito in lavorazione" : $wp_text ?>
 					</h1>
