@@ -5,40 +5,30 @@
 
 @import "custom.css";
 
+body{
+	@applt text-zinc-800;
+}
 
+/* fix wp .alignwide */
 
 .alignwide {
 	margin: 2rem auto;
 	max-width: 1280px !important;
 }
 
-.h-screen-header{
-
-	/* retro-combability */
-	height: 100vh;
-
-	height: calc(100vh - 15em);
-}
-
+/* remove header title and hour */
 
 .entry-header {
 	@apply !hidden;
 }
 
-.sub-menu > li:first-child > a{
-	@apply !rounded-t-xl;
-}
-
-.sub-menu > li:last-child > a{
-	@apply !rounded-b-xl;
-}
-
-.title-spacer{
+.header-spacer{
     @apply min-h-[30em];
     @apply h-screen;
 }
 
-.title-container{
+.header-container{
+	@apply select-none;
 	@apply w-screen;
 	@apply !absolute;
 	@apply !inset-0;
@@ -52,40 +42,7 @@
     @apply relative;
 }
 
-@screen lg {
-	.title-xl{
-		@apply !text-9xl;
-	}
-	.title-xl-image{
-		@apply h-[50em];
-	}
-	.socials-slot{
-		@apply justify-end;
-		@apply !flex-col;
-	}
-	.title-container{
-		@apply min-h-[40em];
-	}
-}
-
-.title-xl{
-	@apply max-w-screen-2xl;	
-	@apply text-zinc-600;
-	@apply text-6xl;
-	@apply !font-black;
-	@apply mx-5;
-}
-
-.dark-title-lg{
-	@apply max-w-screen-xl;	
-	@apply text-zinc-200;
-	@apply text-6xl;
-	@apply !font-black;
-	@apply mx-5;
-}
-
-.title-xl-image{
-	@apply !absolute;
+.header-image{
 	@apply opacity-30;
 	@apply mx-auto;
 	@apply max-w-[90%];
@@ -101,6 +58,40 @@
 	@apply bottom-5;
 }
 
+@screen lg {
+	.title-xl{
+		@apply !text-9xl;
+	}
+	.header-image{
+		@apply h-[50em];
+	}
+	.socials-slot{
+		@apply justify-end;
+		@apply !flex-col;
+	}
+	.header-container{
+		@apply min-h-[40em];
+	}
+	.section{
+		@apply mb-0;
+	}
+}
+
+.title-lg{
+	@apply max-w-screen-xl;	
+	@apply text-6xl;
+	@apply !font-black;
+	@apply mx-5;
+}
+
+.title-xl{
+	@apply max-w-screen-2xl;	
+	@apply text-zinc-600;
+	@apply text-6xl;
+	@apply !font-black;
+	@apply mx-5;
+}
+
 .icon{
 	@apply m-6;
 	@apply cursor-pointer;
@@ -109,29 +100,33 @@
 	@apply hover:text-zinc-500;
 }
 
-.dark-section{
-	@apply h-screen;
-	@apply space-y-[2em];
-	@apply min-h-[30em];
-	@apply !text-zinc-100;
-	@apply bg-zinc-800;
+.section{
+	@apply lg:min-h-screen;
 	@apply flex;
-	@apply -mx-4;
-	@apply flex-col;
-	@apply items-center;
+	@apply flex-wrap;
+	@apply mx-5;
+	@apply mb-[10em];
 	@apply justify-center;
-	@apply text-center;
+	@apply items-center;
+	@apply snap-center;
 }
 
-.light-section{
-	@apply h-screen;
-	@apply min-h-[30em];
-	@apply !text-zinc-100;
-	@apply bg-zinc-800;
-	
-	@apply flex;
-	@apply flex-col;
-	@apply items-center;
-	@apply justify-center;
-	@apply text-center;
+/* *{
+	@apply !bg-sky-800/10;
+} */
+
+.vertical{
+	@apply !flex-col;
+}
+
+.text{
+	@apply text-2xl;
+	@apply mx-5;
+	@apply lg:my-0;
+	@apply my-[1em];
+}
+
+.box{
+	@apply m-5;
+	@apply lg:w-[40%];
 }

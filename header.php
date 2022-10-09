@@ -118,6 +118,8 @@
 								inset-x-0 mx-auto
 								hidden
 
+								overflow-hidden
+
 								top-[3.5rem] lg:my-0 my-1 text-center lg:absolute z-40 w-full
 								
 								border border-zinc-200 		

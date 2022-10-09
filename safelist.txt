@@ -8,9 +8,9 @@ wp-caption
 wp-caption-text
 
 
-TODO remove classes inside app.css
-
 h-screen
+w-full
+
 lg:text-9xl
 text-5xl
 font-bold
@@ -28,3 +28,20 @@ z-30
 light-section
 dark-section
 title-lg
+rounded-xl
+max-w-4xl
+max-w-6xl
+max-w-2xl
+
+snap-center
+snap-y
+
+lg:!w-8 
+lg:!h-8
+
+
+lg:order-1
+lg:order-2
+
+order-1
+order-2
