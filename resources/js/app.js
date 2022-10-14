@@ -132,13 +132,16 @@ function toggles() {
 	}
 }
 
-window.addEventListener('load', function() {
+window.addEventListener('load', () => {
+	set_vh();
 	fill_icons();
 	toggles();
 });
 
-window.addEventListener('resize', () => {
-	// We execute the same script as before
+const set_vh = () => {
 	let vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+};
+
+
+window.addEventListener('resize', set_vh);

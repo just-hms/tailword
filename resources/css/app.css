@@ -72,9 +72,9 @@ body{
 	@apply flex-row;
 	@apply justify-end;
 
-	@apply bottom-6;
+	@apply bottom-[5em];
 	@apply right-[5%];
-	@apply space-x-[20%];
+	@apply space-x-[30%];
 }
 
 @screen md {
