@@ -42,7 +42,7 @@
 						<?php } ?>
 					</div>
 					
-					<div aria-label="Toggle navigation" class="lg:hidden block" id="primary-menu-toggle">
+					<div aria-label="Toggle navigation" class="lg:hidden block mt-2" id="primary-menu-toggle">
 						<button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-neutral-800 rounded-lg lg:hidden hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 ">
 							<span class="sr-only">Open main menu</span>
 							<svg viewBox="0 0 20 20" class="inline-block w-8 h-8" version="1.1"

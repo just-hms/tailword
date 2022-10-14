@@ -10,6 +10,13 @@ body{
 	/* @apply !bg-zinc-100; */
 }
 
+/* make h-scren work on phone  */
+
+.h-screen {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+}
+
 /* fix wp .alignwide */
 
 .alignwide {
@@ -55,15 +62,15 @@ body{
 	@apply mx-5;
 }
 
-
 .socials-slot{
 	@apply !absolute;
 	@apply !flex;
 	@apply flex-row;
 	@apply justify-end;
 
-	@apply right-8;
-	@apply bottom-5;
+	@apply bottom-6;
+	@apply right-[5%];
+	@apply space-x-[20%];
 }
 
 @screen md {
@@ -81,6 +88,11 @@ body{
 	.socials-slot{
 		@apply justify-end;
 		@apply !flex-col;
+		@apply !space-x-0;
+		@apply !space-y-12;
+		@apply !right-12;
+		@apply !bottom-12;
+
 	}
 	.header-container{
 		@apply min-h-[30em];
@@ -98,7 +110,6 @@ body{
 		@apply w-[44%];
 		@apply mx-[2%];
 	}
-
 }
 
 .title-lg{

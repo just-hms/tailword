@@ -133,6 +133,11 @@ function toggles() {
 }
 
 window.addEventListener('load', function() {
+	
+	this.window.onresize = () => {
+		document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + 'px');
+	}
+	
 	fill_icons();
 	toggles();
 });
