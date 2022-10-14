@@ -24,7 +24,6 @@ body{
 }
 
 .header-spacer{
-    @apply min-h-[30em];
     @apply h-screen;
 }
 
@@ -34,7 +33,6 @@ body{
 	@apply !absolute;
 	@apply !inset-0;
     @apply h-screen;
-    @apply min-h-[30em];
 	@apply flex;
 
     @apply text-center;
@@ -85,7 +83,10 @@ body{
 		@apply !flex-col;
 	}
 	.header-container{
-		@apply min-h-[40em];
+		@apply min-h-[30em];
+	}
+	.header-spacer{
+		@apply min-h-[30em];
 	}
 	.section{
 		@apply mb-0;
