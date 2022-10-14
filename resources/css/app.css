@@ -93,7 +93,8 @@ body{
 		@apply !text-9xl;
 	}
 	.header-image{
-		@apply h-[50em];
+		@apply max-w-[80%];
+
 	}
 	.socials-slot{
 		@apply justify-end;

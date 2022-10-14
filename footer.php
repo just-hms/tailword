@@ -12,7 +12,7 @@
 
 	<?php do_action( 'tailword_footer' ); ?>
 
-    <div class="lg:flex lg:justify-between">
+    <div class="flex justify-between">
         <div class="mb-6 lg:mb-0 w-44">
 			
 			<?php if ( has_custom_logo() ) { ?>
@@ -34,6 +34,8 @@
 		<div class="container mx-auto text-center text-gray-500">
 			&copy; <?php echo date_i18n( 'Y' );?> - <?php echo get_bloginfo( 'name' );?>
 		</div>
+
+		<div>&nbsp;</div>
 
     </div>
 	
