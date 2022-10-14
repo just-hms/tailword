@@ -12,8 +12,8 @@
 
 	<?php do_action( 'tailword_footer' ); ?>
 
-    <div class="flex justify-between">
-        <div class="mb-6 lg:mb-0 w-44">
+    <div class="mb-6 flex justify-between items-center">
+        <div class="w-44">
 			
 			<?php if ( has_custom_logo() ) { ?>
 				<?php the_custom_logo(); ?>
