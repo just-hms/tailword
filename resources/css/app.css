@@ -10,17 +10,6 @@ body{
 	/* @apply !bg-zinc-100; */
 }
 
-/* make h-scren work on phone  */
-.min-h-screen{
-	min-height: 100vh;
-	min-height: calc(var(--vh, 1vh) * 100);
-}
-
-.h-screen {
-    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
-}
-
 /* fix wp .alignwide */
 
 .alignwide {
@@ -34,8 +23,17 @@ body{
 	@apply !hidden;
 }
 
+@layer utilities{
+	
+	.h-phone-screen{
+		height: 100vh;
+		height: calc(100vh - 5rem);
+	}
+
+} 
+
 .header-spacer{
-    @apply h-screen;
+    @apply h-phone-screen;
 }
 
 .header-container{
@@ -43,7 +41,7 @@ body{
 	@apply w-screen;
 	@apply !absolute;
 	@apply !inset-0;
-    @apply h-screen;
+    @apply h-phone-screen;
 	@apply flex;
 
     @apply text-center;
@@ -67,14 +65,15 @@ body{
 }
 
 .socials-slot{
+	@apply inset-x-0;
 	@apply !absolute;
 	@apply !flex;
 	@apply flex-row;
 	@apply justify-end;
 
-	@apply bottom-[5em];
+	@apply bottom-5;
 	@apply right-[5%];
-	@apply space-x-[30%];
+	@apply space-x-[7%];
 }
 
 @screen md {
@@ -99,10 +98,10 @@ body{
 
 	}
 	.header-container{
-		@apply min-h-[30em];
+		@apply !h-screen;
 	}
 	.header-spacer{
-		@apply min-h-[30em];
+		@apply !h-screen;
 	}
 	.section{
 		@apply mb-0;
@@ -171,6 +170,10 @@ body{
 	@apply mx-5;
 	@apply lg:my-0;
 	@apply my-[2em];
+}
+
+.text-sm{
+	@apply !text-xl;
 }
 
 .box{
