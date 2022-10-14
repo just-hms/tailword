@@ -95,6 +95,7 @@ body{
 		@apply !space-y-12;
 		@apply !right-12;
 		@apply !bottom-12;
+		@apply !left-auto;	
 
 	}
 	.header-container{
