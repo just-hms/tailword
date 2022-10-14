@@ -5,9 +5,13 @@
 
 @import "custom.css";
 
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
 body{
 	@apply text-zinc-800;
-	/* @apply !bg-zinc-100; */
 }
 
 /* fix wp .alignwide */
@@ -27,7 +31,7 @@ body{
 	
 	.h-phone-screen{
 		height: 100vh;
-		height: calc(100vh - 6rem);
+		height: calc(100vh - 12rem);
 	}
 
 } 

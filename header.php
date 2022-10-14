@@ -25,7 +25,7 @@
 		<div class="mx-4 lg:ml-10 lg:mr-20">
 			<div class="lg:flex lg:justify-between lg:items-center pb-6">
 				<div class="flex justify-between items-center">
-					<div class="max-w-[15rem] my-3">
+					<div class="md:max-w-[15rem] max-w-[10rem] my-3">
 						<?php if ( has_custom_logo() ) {
                             the_custom_logo();
 						} else { ?>
