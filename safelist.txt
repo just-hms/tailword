@@ -45,3 +45,8 @@ lg:order-2
 
 order-1
 order-2
+
+font-bold
+inline
+
+m-6

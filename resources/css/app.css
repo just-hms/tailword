@@ -68,6 +68,11 @@ body{
 	@apply bottom-5;
 }
 
+@screen md {
+	.maps{
+		@apply !h-[30em];
+	}
+}
 @screen lg {
 	.header-title{
 		@apply !text-9xl;
@@ -92,28 +97,40 @@ body{
 		@apply w-[44%];
 		@apply mx-[2%];
 	}
+
 }
 
 .title-lg{
 	@apply max-w-screen-xl;	
 	@apply text-6xl;
 	@apply !font-black;
-	@apply mx-5;
+	@apply m-5;
 }
 
 .title-xl{
 	@apply max-w-screen-2xl;	
 	@apply text-9xl;
 	@apply !font-black;
-	@apply mx-5;
+	@apply m-5;
 }
 
 .icon{
-	@apply m-6;
 	@apply cursor-pointer;
 	@apply block;
 	@apply text-zinc-400;
 	@apply hover:text-zinc-500;
+}
+
+.short-section{
+	@apply flex;
+	@apply flex-wrap;
+	@apply px-5;
+	@apply -mx-5;
+	@apply py-[2em];
+	@apply mb-[5em];
+	@apply justify-center;
+	@apply items-center;
+	@apply snap-center;
 }
 
 .section{
@@ -137,7 +154,7 @@ body{
 	@apply text-2xl;
 	@apply mx-5;
 	@apply lg:my-0;
-	@apply my-[1em];
+	@apply my-[2em];
 }
 
 .box{
@@ -162,6 +179,13 @@ body{
 }
 
 
+.maps{
+	@apply w-full;
+	@apply max-w-4xl;
+	@apply rounded-xl;	
+	@apply h-[20em];
+}
+
 .image-lg{
 	@apply w-full;
 	@apply max-w-4xl;
@@ -181,7 +205,7 @@ body{
 }
 
 .horizontal{
-	@apply flex-col;
+	@apply !flex-row;
 }
 
 .half{
@@ -195,4 +219,18 @@ body{
 	@apply p-[4em];
 }
 
+#content ul, #content ol{
+	@apply ml-[2em];
+} 
 
+#content ul > li{
+	@apply list-disc;
+}
+
+#content ol > li{
+	@apply list-decimal;
+}
+
+#content a{
+	@apply font-bold;
+}

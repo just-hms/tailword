@@ -646,6 +646,10 @@ video {
   margin: 2rem;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -686,9 +690,9 @@ video {
   margin-right: 2%;
 }
 
-.my-\[1em\] {
-  margin-top: 1em;
-  margin-bottom: 1em;
+.my-\[2em\] {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .-mt-\[2em\] {
@@ -727,8 +731,16 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-\[5em\] {
+  margin-bottom: 5em;
+}
+
 .mb-\[10em\] {
   margin-bottom: 10em;
+}
+
+.ml-\[2em\] {
+  margin-left: 2em;
 }
 
 .block {
@@ -737,6 +749,14 @@ video {
 
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.\!inline {
+  display: inline !important;
 }
 
 .flex {
@@ -779,8 +799,16 @@ video {
   height: 2rem;
 }
 
+.\!h-\[30em\] {
+  height: 30em !important;
+}
+
 .h-\[50em\] {
   height: 50em;
+}
+
+.h-\[20em\] {
+  height: 20em;
 }
 
 .min-h-screen {
@@ -909,6 +937,10 @@ video {
   overflow-x: hidden !important;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -993,6 +1025,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-\[2em\] {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .py-\[4em\] {
@@ -1210,6 +1247,12 @@ body {
   bottom: 1.25rem;
 }
 
+@media (min-width: 768px) {
+  .maps {
+    height: 30em !important;
+  }
+}
+
 @media (min-width: 1024px) {
   .header-title {
     font-size: 8rem !important;
@@ -1249,8 +1292,7 @@ body {
   font-size: 3.75rem;
   line-height: 1;
   font-weight: 900 !important;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin: 1.25rem;
 }
 
 .title-xl {
@@ -1258,12 +1300,10 @@ body {
   font-size: 8rem;
   line-height: 1;
   font-weight: 900 !important;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin: 1.25rem;
 }
 
 .icon {
-  margin: 1.5rem;
   cursor: pointer;
   display: block;
   --tw-text-opacity: 1;
@@ -1273,6 +1313,21 @@ body {
 .icon:hover {
   --tw-text-opacity: 1;
   color: rgb(113 113 122 / var(--tw-text-opacity));
+}
+
+.short-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 5em;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
 }
 
 .section {
@@ -1310,8 +1365,8 @@ body {
 }
 
 .text {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .box {
@@ -1344,6 +1399,13 @@ body {
   border-radius: 0.75rem;
 }
 
+.maps {
+  width: 100%;
+  max-width: 56rem;
+  border-radius: 0.75rem;
+  height: 20em;
+}
+
 .image-lg {
   width: 100%;
   max-width: 56rem;
@@ -1363,7 +1425,7 @@ body {
 }
 
 .horizontal {
-  flex-direction: column;
+  flex-direction: row !important;
 }
 
 .half {
@@ -1376,6 +1438,22 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
   padding: 4em;
+}
+
+#content ul,  #content ol {
+  margin-left: 2em;
+}
+
+#content ul > li {
+  list-style-type: disc;
+}
+
+#content ol > li {
+  list-style-type: decimal;
+}
+
+#content a {
+  font-weight: 700;
 }
 
 .hover\:bg-neutral-100:hover {
@@ -1568,5 +1646,3 @@ body {
             text-decoration-line: underline;
   }
 }
-
-
