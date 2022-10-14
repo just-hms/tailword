@@ -1,0 +1,25 @@
+name: Node.js Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        with:
+          node-version: 12
+      - run: npm run production
+
+  publish-gpr:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com/
+      - run: npm run production
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

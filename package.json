@@ -1,7 +1,10 @@
 {
   "name": "tailword",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "a wordpress theme made with tailwindcss",
+  "publishConfig": {
+    "@just-hms:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "production:css-app": "cross-env NODE_ENV=development tailwindcss -i ./resources/css/app.css -o ./assets/css/app.css --postcss --minify",
     "production:css-editor": "cross-env NODE_ENV=development tailwindcss -i ./resources/css/editor-style.css -o ./assets/css/editor-style.css --postcss --minify",
