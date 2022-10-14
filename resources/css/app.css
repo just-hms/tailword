@@ -27,7 +27,7 @@ body{
 	
 	.h-phone-screen{
 		height: 100vh;
-		height: calc(100vh - 10rem);
+		height: calc(100vh - 6rem);
 	}
 
 } 
@@ -51,14 +51,16 @@ body{
 }
 
 .header-image{
-	@apply opacity-30;
+	@apply opacity-40;
 	@apply mx-auto;
 	@apply max-w-[90%];
+	@apply max-h-[50rem];
 }
 
 .header-title{
-	@apply max-w-screen-2xl;	
-	@apply text-zinc-600;
+	@apply max-w-screen-xl;	
+	@apply text-zinc-900;
+	@apply opacity-90;
 	@apply text-6xl;
 	@apply !font-black;
 	@apply mx-5;
@@ -250,4 +252,8 @@ body{
 
 #content a{
 	@apply font-bold;
+}
+
+.cata{
+	@apply !text-[#f79400];
 }

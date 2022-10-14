@@ -14,6 +14,7 @@
 
     <div class="lg:flex lg:justify-between">
         <div class="mb-6 lg:mb-0 w-44">
+			
 			<?php if ( has_custom_logo() ) { ?>
 				<?php the_custom_logo(); ?>
 			<?php } else { ?>
@@ -30,25 +31,9 @@
 			<?php } ?>
         </div>
 				
-		<?php 
-			wp_nav_menu(
-				array(
-					'theme_location'  => 'secondary',
-					'container_id'    => 'secondary-menu' ,
-					'fallback_cb'     => false,
-
-					'menu_class'      => '
-						grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 
-					',
-					
-					'li_class'         => 'w-44 font-normal',
-						
-					'anchor_class_0'   => 'font-bold text-gray-900  uppercase ',
-					'anchor_class'     => 'hover:underline mb-2 ',
-					'submenu_class'    => 'mt-6 static',
-				)
-			);
-		?>
+		<div class="container mx-auto text-center text-gray-500">
+			&copy; <?php echo date_i18n( 'Y' );?> - <?php echo get_bloginfo( 'name' );?>
+		</div>
 
     </div>
 	
