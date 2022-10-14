@@ -12,7 +12,7 @@
 
 	<?php do_action( 'tailword_footer' ); ?>
 
-    <div class="mb-6 flex justify-between items-center">
+    <div class="flex flex-wrap space-y-6 justify-between items-center">
         <div class="w-44">
 			
 			<?php if ( has_custom_logo() ) { ?>
