@@ -5,9 +5,10 @@
 
 @import "custom.css";
 
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+html{
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 }
 
 body{
@@ -31,7 +32,7 @@ body{
 	
 	.h-phone-screen{
 		height: 100vh;
-		height: calc(100vh - 12rem);
+		height: calc(100vh - 10rem);
 	}
 
 } 
