@@ -27,7 +27,7 @@ body{
 	
 	.h-phone-screen{
 		height: 100vh;
-		height: calc(100vh - 5rem);
+		height: calc(100vh - 10rem);
 	}
 
 } 
@@ -141,7 +141,7 @@ body{
 	@apply flex;
 	@apply flex-wrap;
 	@apply px-5;
-	@apply -mx-5;
+	@apply -mx-3;
 	@apply py-[2em];
 	@apply mb-[5em];
 	@apply justify-center;
@@ -154,7 +154,7 @@ body{
 	@apply flex;
 	@apply flex-wrap;
 	@apply px-5;
-	@apply -mx-5;
+	@apply -mx-3;
 	@apply py-[4em];
 	@apply mb-[10em];
 	@apply justify-center;
@@ -167,14 +167,11 @@ body{
 }
 
 .text{
-	@apply text-2xl;
+	@apply text-xl;
+	@apply md:!text-2xl;
 	@apply mx-5;
 	@apply lg:my-0;
 	@apply my-[2em];
-}
-
-.text-sm{
-	@apply !text-xl;
 }
 
 .box{
