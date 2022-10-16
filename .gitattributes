@@ -4,3 +4,6 @@ package-lock.json export-ignore
 postcss.config.js export-ignore
 safelist.txt export-ignore
 tailwind.config.js export-ignore
+.gitignore export-ignore
+.npmrc export-ignore
+package.json export-ignore
