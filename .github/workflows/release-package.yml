@@ -24,7 +24,7 @@ jobs:
         with:
           name: "Automatic release test"
           body: "New test with softprops"
-          files: assets/*
+#          files: assets/*
 
   # release on npm
 
