@@ -1,0 +1,8 @@
+.gitignore
+node_modules/
+package-lock.json
+package.json
+postcss.config.js
+release-package.yml
+safelist.txt
+tailwind.config.js
