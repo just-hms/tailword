@@ -1,6 +1,0 @@
-node_modules/
-.github/
-package-lock.json
-postcss.config.js
-safelist.txt
-tailwind.config.js

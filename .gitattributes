@@ -1,0 +1,6 @@
+node_modules export-ignore
+.github export-ignore
+package-lock.json export-ignore
+postcss.config.js export-ignore
+safelist.txt export-ignore
+tailwind.config.js export-ignore
