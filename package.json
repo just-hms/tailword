@@ -232,6 +232,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "test" : "echo \"provide test\"",
     "production:css-app": "cross-env NODE_ENV=development tailwindcss -i ./resources/css/app.css -o ./assets/css/app.css --postcss --minify",
     "production:css-editor": "cross-env NODE_ENV=development tailwindcss -i ./resources/css/editor-style.css -o ./assets/css/editor-style.css --postcss --minify",
     "production:js": "cross-env NODE_ENV=development ./node_modules/.bin/esbuild ./resources/js/app.js --bundle --outfile=./assets/js/app.js --minify",
