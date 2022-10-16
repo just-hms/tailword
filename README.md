@@ -5,7 +5,7 @@ A WordPress theme made using tailwind
 
 ## usage
 
-- dev: 
+- dev
 
 	```sh
 	npm run watch

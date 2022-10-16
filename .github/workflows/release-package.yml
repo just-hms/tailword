@@ -5,6 +5,9 @@ on:
     types: [created]
 
 jobs:
+
+  # release on github
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -16,6 +19,8 @@ jobs:
       - run: npm test
       - run: npm run production
 
+  # release on npm
+  
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
