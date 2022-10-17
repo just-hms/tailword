@@ -65,7 +65,7 @@ body{
 .header-title{
 	@apply max-w-screen-xl;	
 	@apply text-zinc-900;
-	@apply opacity-90;
+	@apply opacity-70;
 	@apply text-6xl;
 	@apply !font-black;
 	@apply mx-5;
