@@ -23,9 +23,9 @@ jobs:
       - name: Upload archive
         uses: actions/upload-artifact@v3
         with:
-          name: tailword_archive
-          path: .github/workflows/tailword.zip
-      
+          name: template_archive
+          path: template.zip
+
   publish:
     runs-on: ubuntu-latest
     needs:
@@ -34,7 +34,7 @@ jobs:
       - name: Download template archive
         uses: actions/download-artifact@v3
         with:
-          name: tailword_archive
+          name: template_archive
           path: publish/
 
       - name: Publish release to GitHub
