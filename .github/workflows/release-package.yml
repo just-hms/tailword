@@ -23,7 +23,7 @@ jobs:
       - name: Upload archive
         uses: actions/upload-artifact@v3
         with:
-          # name: template_archive
+          name: tailword_archive
           path: tailword.zip
       - name: Remove File
         uses: JesseTG/rm@v1.0.3
