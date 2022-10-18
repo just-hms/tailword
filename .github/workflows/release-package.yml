@@ -10,26 +10,18 @@ jobs:
   build:
     name: Publish
     runs-on: ubuntu-latest
+    - uses: actions/checkout@v2
 
     steps:
-    - uses: actions/checkout@v2
     - name: Build
       run: |
         npm ci
         npm run production
-
-  publish:
-    runs-on: ubuntu-latest
-    needs:
-        - build
-    name: Upload files
-    
-    steps:
+      name: Upload files
       - uses: AButler/upload-release-assets@v2.0
         with:
-          files: 'assets/;README.md'
+          files: 'assets/'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-        run: ls
 
 # jobs:
 #   build:
