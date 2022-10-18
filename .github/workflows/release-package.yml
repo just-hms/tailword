@@ -8,11 +8,10 @@ on:
 jobs:
   
   build:
-    name: Publish
     runs-on: ubuntu-latest
-    - uses: actions/checkout@v2
 
     steps:
+    - uses: actions/checkout@v2
     - name: Build
       run: |
         npm ci
