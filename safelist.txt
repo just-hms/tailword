@@ -50,3 +50,5 @@ font-bold
 inline
 
 m-6
+
+m-5
