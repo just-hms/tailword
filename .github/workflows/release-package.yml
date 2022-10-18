@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Publish
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
@@ -17,16 +17,16 @@ jobs:
         npm ci
         npm run production
 
-  upload:
-    name: Upload files
-    runs-on: ubuntu-latest
+    upload:
+      name: Upload files
+      runs-on: ubuntu-latest
 
-    
-    steps:
-      - uses: AButler/upload-release-assets@v2.0
-        with:
-          files: 'assets/*;assets/*/*'
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      
+      steps:
+        - uses: AButler/upload-release-assets@v2.0
+          with:
+            files: 'assets/*;assets/*/*'
+            repo-token: ${{ secrets.GITHUB_TOKEN }}
 
 # jobs:
 #   build:
