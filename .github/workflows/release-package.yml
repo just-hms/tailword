@@ -43,7 +43,7 @@ jobs:
       - name: Download template archive
         uses: actions/download-artifact@v3
         with:
-          name: template_archive
+          name: tailword_archive
           path: publish/
 
       - name: Publish release to GitHub
