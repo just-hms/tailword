@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: AButler/upload-release-assets@v2.0
         with:
-          files: 'assets/*;assets/*/*'
+          files: 'assets/;README.md'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
 # jobs:
