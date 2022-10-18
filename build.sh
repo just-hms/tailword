@@ -4,4 +4,4 @@ npm ci
 npm test
 npm run production
 
-zip -r template.zip *.php *.css README.md assets screenshot.png template-parts
+zip -r tailword.zip *.php *.css README.md assets screenshot.png template-parts
