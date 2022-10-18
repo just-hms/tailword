@@ -47,8 +47,8 @@ jobs:
       - name: Publish release to GitHub
         uses: softprops/action-gh-release@v1
         with:
-          name: "Automatic release test"
-          body: "New test with softprops"
+          name: "Automatic Bundle"
+          body: ""
           files: publish/*
 
   # release on npm
