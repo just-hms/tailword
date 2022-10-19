@@ -122,6 +122,10 @@ body{
 		@apply w-[44%];
 		@apply mx-[2%];
 	}
+	.vimeo{
+		@apply h-[30rem];
+	}
+
 }
 
 .title-lg{
@@ -262,4 +266,16 @@ body{
 
 .cata{
 	@apply !text-[#f79400];
+}
+
+.vimeo {
+	@apply !w-full;
+	@apply h-[15rem];
+
+}
+
+.wp-block-gallery{
+	@apply container;
+	@apply mx-auto;
+	@apply px-4;
 }
