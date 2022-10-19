@@ -20,7 +20,7 @@ jobs:
           node-version: '16.x'
       
       - name: Build asset files
-        run: /.github/workflows/build.sh
+        run: .github/workflows/build.sh
 
       - name: Upload archive
         uses: actions/upload-artifact@v3
