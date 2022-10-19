@@ -280,8 +280,7 @@ body{
 	@apply px-4;
 }
 
-.vp-video-wrapper{
+.player .vp-video-wrapper{
 	@apply !rounded-xl;
 	@apply !overflow-hidden;
-
 }
