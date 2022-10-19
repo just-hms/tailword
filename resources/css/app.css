@@ -279,3 +279,9 @@ body{
 	@apply mx-auto;
 	@apply px-4;
 }
+
+.vp-video-wrapper{
+	@apply !rounded-xl;
+	@apply !overflow-hidden;
+
+}
