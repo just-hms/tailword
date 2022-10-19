@@ -20,7 +20,12 @@ jobs:
           node-version: '16.x'
       
       - name: Build asset files
-        run: /.github/workflows/build.sh
+        run: |
+          npm ci
+          npm test
+          npm run production
+
+          zip -r tailword.zip *.php *.css README.md assets screenshot.png template-parts
 
       - name: Upload archive
         uses: actions/upload-artifact@v3
