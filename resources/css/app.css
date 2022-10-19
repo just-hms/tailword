@@ -279,3 +279,7 @@ body{
 	@apply mx-auto;
 	@apply px-4;
 }
+
+.wp-block-image{
+	@apply rounded-xl;
+}
