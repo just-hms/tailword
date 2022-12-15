@@ -59,7 +59,7 @@ body{
 	@apply opacity-10;
 	@apply mx-auto;
 	@apply h-screen;
-	@apply max-w-none;
+	@apply !max-w-none;
 }
 
 .header-title{
