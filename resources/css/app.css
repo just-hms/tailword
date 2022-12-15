@@ -5,6 +5,25 @@
 
 @import "custom.css";
 
+/* gallery caption */
+.wp-block-image figcaption {
+    background: #E8E8E8;
+    color: #000;
+    padding: 10px;
+    position: absolute;
+    bottom: -14px;
+    width: 100%;
+    opacity:0;
+}
+figure.aligncenter {
+    position: relative;
+}
+figure.aligncenter:hover figcaption{
+    opacity:1;
+}
+/* gallery caption */
+
+
 html{
 	-moz-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
