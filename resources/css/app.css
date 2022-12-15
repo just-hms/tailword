@@ -56,10 +56,9 @@ body{
 }
 
 .header-image{
-	@apply opacity-40;
+	@apply opacity-10;
 	@apply mx-auto;
-	@apply max-w-[90%];
-	@apply max-h-[50rem];
+	@apply h-screen;
 }
 
 .header-title{
@@ -93,8 +92,8 @@ body{
 		@apply !text-9xl;
 	}
 	.header-image{
-		@apply max-w-[80%];
-
+		@apply !h-fit;
+		@apply w-full;
 	}
 	.socials-slot{
 		@apply justify-end;
