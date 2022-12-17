@@ -5,6 +5,16 @@
 
 @import "custom.css";
 
+.wp-block-gallery > .wp-block-image{
+	@apply !overflow-hidden;
+}
+
+
+.wp-block-gallery > .wp-block-image > img{
+	@apply !m-0;
+	@apply !p-0;
+}
+
 .wp-block-gallery > .wp-block-image > .wp-element-caption{
 	@apply !text-black;
 	@apply border-t;
@@ -29,14 +39,6 @@
 	@apply border-zinc-200;
 }
 
-.wp-block-gallery > .wp-block-image > img :only-child{
-	@apply rounded-b-xl;
-}
-
-.wp-block-gallery > .wp-block-image > img {
-	@apply rounded-t-xl;
-}
-
 
 section:only-child {
 	max-width: 1000px;
@@ -47,6 +49,7 @@ html{
 	-moz-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
+	@apply !break-words;
 }
 
 body{
@@ -166,7 +169,7 @@ body{
 
 }
 
-.title-lg{
+.title-lg {
 	@apply max-w-screen-xl;	
 	@apply text-6xl;
 	@apply !font-black;

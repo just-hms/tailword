@@ -1191,6 +1191,15 @@ video {
   height: calc(100vh - 10rem);
 }
 
+.wp-block-gallery > .wp-block-image {
+  overflow: hidden !important;
+}
+
+.wp-block-gallery > .wp-block-image > img {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
 .wp-block-gallery > .wp-block-image > .wp-element-caption {
   --tw-text-opacity: 1 !important;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
@@ -1216,16 +1225,6 @@ video {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(228 228 231 / var(--tw-border-opacity));
-}
-
-.wp-block-gallery > .wp-block-image > img :only-child {
-  border-bottom-right-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
-}
-
-.wp-block-gallery > .wp-block-image > img {
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
 }
 
 section:only-child {
