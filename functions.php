@@ -118,7 +118,7 @@ function parent_menu_dropdown( $item_output, $item, $depth, $args ) {
 
 	if (in_array( 'menu-item-has-children', $item->classes ) ){
 		
-		$item_output = str_replace("class=\"", "class=\"lg:!px-5 cursor-pointer w-full lg:shadow lg:border lg:border-zinc-200 lg:rounded-xl ", $item_output);
+		$item_output = str_replace("class=\"", "class=\"lg:!px-5 lg:!bg-white cursor-pointer w-full lg:shadow lg:border lg:border-zinc-200 lg:rounded-xl ", $item_output);
 		$item_output = str_replace("underline", "", $item_output);
 		// TODO fix this
 		// $item_output = preg_replace('\w[href="].*"', "", $item_output);

@@ -88,7 +88,8 @@
 							'container_class' => 'hidden lg:block',
 							
 							'menu_class'      => '
-								text-zinc-500
+								
+								text-zinc-700
 
 								font-medium	
 
@@ -97,9 +98,9 @@
 								flex flex-col lg:flex-row justify-center items-center 
 								w-[90%] py-4 mx-auto rounded-xl
 								border lg:border-0 border-zinc-300
-								bg-zinc-50 px-4
+								bg-zinc-50
 								lg:bg-transparent
-								my-2
+								px-4 my-2
 							',
 							
 							'li_class_0'       => '

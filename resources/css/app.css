@@ -5,23 +5,29 @@
 
 @import "custom.css";
 
-/* gallery caption */
-.wp-block-image figcaption {
-    background: #E8E8E8;
-    color: #000;
-    padding: 10px;
-    position: absolute;
-    bottom: -14px;
-    width: 100%;
-    opacity:0;
+.wp-block-gallery > .wp-block-image > .wp-element-caption{
+	@apply !text-black;
+	@apply border-t;
+	@apply border-zinc-100;
+
+	@apply !overflow-y-clip;
+
+	@apply !text-lg;
+	@apply rounded-b-xl;
+	@apply !relative;
+	@apply !bottom-0;
+	@apply !m-0;
+	@apply !p-4;
+	flex-basis: auto !important;
+	flex-grow: initial;
+	background: white !important;
 }
-figure.aligncenter {
-    position: relative;
+
+.wp-block-gallery > .wp-block-image{
+	@apply rounded-xl;
+	@apply border-2;
+	@apply border-zinc-200;
 }
-figure.aligncenter:hover figcaption{
-    opacity:1;
-}
-/* gallery caption */
 
 
 html{
@@ -75,7 +81,7 @@ body{
 }
 
 .header-image{
-	@apply opacity-10;
+	@apply opacity-30;
 	@apply mx-auto;
 	@apply h-screen;
 	@apply !max-w-none;
@@ -164,8 +170,8 @@ body{
 .icon{
 	@apply cursor-pointer;
 	@apply block;
-	@apply text-zinc-400;
-	@apply hover:text-zinc-500;
+	@apply text-zinc-500;
+	@apply hover:text-zinc-600;
 }
 
 .short-section{
