@@ -7,10 +7,8 @@ wp-block-button
 wp-caption
 wp-caption-text
 
-
 h-screen
 w-full
-
 lg:text-9xl
 text-5xl
 font-bold
@@ -21,10 +19,8 @@ title-xl
 title-container
 socials-slot
 sr-only
-
 z-20
 z-30
-
 light-section
 dark-section
 title-lg
@@ -32,23 +28,17 @@ rounded-xl
 max-w-4xl
 max-w-6xl
 max-w-2xl
-
 snap-center
 snap-y
-
 lg:!w-8 
 lg:!h-8
-
-
 lg:order-1
 lg:order-2
-
 order-1
 order-2
-
 font-bold
 inline
-
 m-6
-
 m-5
+mt-2
+xl:block
