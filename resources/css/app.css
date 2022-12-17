@@ -39,17 +39,14 @@
 	@apply border-zinc-200;
 }
 
-
 section:only-child {
 	max-width: 1000px;
 }
-
 
 html{
 	-moz-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
-	@apply !break-words;
 }
 
 body{
@@ -166,21 +163,30 @@ body{
 	.vimeo{
 		@apply h-[30rem];
 	}
+	.title-lg{
+		@apply !text-6xl;
+	}
+	.title-xl{
+		@apply !text-9xl;
+	}
 
 }
 
 .title-lg {
 	@apply max-w-screen-xl;	
-	@apply text-6xl;
+	@apply text-4xl;
 	@apply !font-black;
 	@apply m-5;
+	@apply !break-words;
+
 }
 
 .title-xl{
 	@apply max-w-screen-2xl;	
-	@apply text-9xl;
+	@apply text-6xl;
 	@apply !font-black;
 	@apply m-5;
+	@apply !break-words;
 }
 
 .icon{
