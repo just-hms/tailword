@@ -715,6 +715,10 @@ video {
   margin-top: -2em;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -990,30 +994,6 @@ video {
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
-.\!bg-white {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.from-indigo-500 {
-  --tw-gradient-from: #6366f1;
-  --tw-gradient-to: rgb(99 102 241 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.via-purple-500 {
-  --tw-gradient-to: rgb(168 85 247 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), #a855f7, var(--tw-gradient-to);
-}
-
-.to-pink-500 {
-  --tw-gradient-to: #ec4899;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -1165,9 +1145,9 @@ video {
   color: rgb(38 38 38 / var(--tw-text-opacity));
 }
 
-.text-zinc-500 {
+.text-zinc-700 {
   --tw-text-opacity: 1;
-  color: rgb(113 113 122 / var(--tw-text-opacity));
+  color: rgb(63 63 70 / var(--tw-text-opacity));
 }
 
 .\!text-black {
@@ -1188,11 +1168,6 @@ video {
 .\!text-\[\#f79400\] {
   --tw-text-opacity: 1 !important;
   color: rgb(247 148 0 / var(--tw-text-opacity)) !important;
-}
-
-.text-zinc-700 {
-  --tw-text-opacity: 1;
-  color: rgb(63 63 70 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1241,6 +1216,20 @@ video {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(228 228 231 / var(--tw-border-opacity));
+}
+
+.wp-block-gallery > .wp-block-image > img :only-child {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.wp-block-gallery > .wp-block-image > img {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+section:only-child {
+  max-width: 1000px;
 }
 
 html{
@@ -1763,62 +1752,13 @@ body {
     border-color: rgb(228 228 231 / var(--tw-border-opacity));
   }
 
-  .lg\:bg-transparent {
-    background-color: transparent;
-  }
-
-  .lg\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
   .lg\:\!bg-white {
     --tw-bg-opacity: 1 !important;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
   }
 
-  .lg\:bg-gradient-to-r {
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  }
-
-  .lg\:bg-gradient-to-b {
-    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-  }
-
-  .lg\:from-indigo-500 {
-    --tw-gradient-from: #6366f1;
-    --tw-gradient-to: rgb(99 102 241 / 0);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  }
-
-  .lg\:from-white {
-    --tw-gradient-from: #fff;
-    --tw-gradient-to: rgb(255 255 255 / 0);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  }
-
-  .lg\:from-transparent {
-    --tw-gradient-from: transparent;
-    --tw-gradient-to: rgb(0 0 0 / 0);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  }
-
-  .lg\:via-purple-500 {
-    --tw-gradient-to: rgb(168 85 247 / 0);
-    --tw-gradient-stops: var(--tw-gradient-from), #a855f7, var(--tw-gradient-to);
-  }
-
-  .lg\:via-white {
-    --tw-gradient-to: rgb(255 255 255 / 0);
-    --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to);
-  }
-
-  .lg\:to-transparent {
-    --tw-gradient-to: transparent;
-  }
-
-  .lg\:to-pink-500 {
-    --tw-gradient-to: #ec4899;
+  .lg\:bg-transparent {
+    background-color: transparent;
   }
 
   .lg\:\!px-5 {
@@ -1859,5 +1799,11 @@ body {
   .lg\:hover\:underline:hover {
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
   }
 }

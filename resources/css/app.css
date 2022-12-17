@@ -29,6 +29,19 @@
 	@apply border-zinc-200;
 }
 
+.wp-block-gallery > .wp-block-image > img :only-child{
+	@apply rounded-b-xl;
+}
+
+.wp-block-gallery > .wp-block-image > img {
+	@apply rounded-t-xl;
+}
+
+
+section:only-child {
+	max-width: 1000px;
+}
+
 
 html{
 	-moz-text-size-adjust: none;
